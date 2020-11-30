@@ -34,8 +34,8 @@
         },
         "attributes": {
           "name": {
-          "value": ""
-        },
+            "value": ""
+          },
           "age": {
             "value": ""
           },
@@ -221,6 +221,18 @@
           "value": []
         }
       }
+    },
+    "trainer": {
+      "templates": [
+        "common",
+        "trainer"
+      ]
+    },
+    "pokemon": {
+      "templates": [
+        "common",
+        "pokemon"
+      ]
     }
   },
   "Item": {
@@ -234,6 +246,76 @@
       "status",
       "ability",
       "move"
-    ]
+    ],
+    "templates": {
+      "common": {
+        "name": "",
+        "description": "",
+        "source": ""
+      },
+      "physicalItem": {
+        "quantity": 0,
+        "price": 0,
+        "weight": 0
+      }
+    },
+    "pokeball": {
+      "template": [
+        "common",
+        "physicalItem"
+      ],
+      "bonus": 0
+    },
+    "berry": {
+      "template": [
+        "common",
+        "physicalItem"
+      ],
+      "tier": 0
+    },
+    "healing": {
+      "template": [
+        "common",
+        "physicalItem"
+      ],
+      "value": 0
+    },
+    "feat": {
+      "template": [
+        "common"
+      ]
+    },
+    "edge": {
+      "template": [
+        "common"
+      ]
+    },
+    "status": {
+      "template": [
+        "common"
+      ]
+    },
+    "ability": {
+      "template": [
+        "common"
+      ]
+    },
+    "move": {
+      "template": [
+        "common"
+      ],
+      "freq": "",
+      "ac": 2,
+      "type": {
+        "att": "",
+        "dmg": ""
+      },
+      "damage": "",
+      "range": {
+        "range": 0,
+        "targets": ""
+      },
+      "keywords": []
+    }
   }
 }

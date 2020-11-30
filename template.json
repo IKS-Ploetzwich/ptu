@@ -1,0 +1,239 @@
+{
+  "Actor": {
+    "types": [
+      "trainer",
+      "pokemon"
+    ],
+    "templates": {
+      "common": {
+        "stats": {
+          "hp": {
+            "min": 1,
+            "value": 1
+          },
+          "atk": {
+            "min": 1,
+            "value": 1
+          },
+          "def": {
+            "min": 1,
+            "value": 1
+          },
+          "spatk": {
+            "min": 1,
+            "value": 1
+          },
+          "spdef": {
+            "min": 1,
+            "value": 1
+          },
+          "speed": {
+            "min": 1,
+            "value": 1
+          }
+        },
+        "attributes": {
+          "name": {
+          "value": ""
+        },
+          "age": {
+            "value": ""
+          },
+          "gender": {
+            "value": ""
+          },
+          "weight": {
+            "value": "",
+            "class": 1
+          },
+          "size": {
+            "value": "",
+            "class": "1"
+          },
+          "health": {
+            "max": 10,
+            "min": 0,
+            "value": 0,
+            "temp": 0
+          },
+          "init": {
+            "value": 0,
+            "mod": 0
+          },
+          "evasion": {
+            "phys": {
+              "min": 0,
+              "max": 6,
+              "value": 0,
+              "bonus": 0,
+              "withBonusMax": 9
+            },
+            "spec": {
+              "min": 0,
+              "max": 6,
+              "value": 9,
+              "bonus": 0,
+              "withBonusMax": 9
+            },
+            "speed": {
+              "min": 0,
+              "max": 6,
+              "value": 0,
+              "bonus": 0,
+              "withBonusMax": 9
+            }
+          },
+          "injuries": 0
+        },
+        "capabilities": {
+          "overland": 0,
+          "swim": 0,
+          "jump": {
+            "high": 0,
+            "long": 0
+          },
+          "power": 0,
+          "additional": []
+        },
+        "level": {
+          "value": "",
+          "exp": {
+            "value": 0,
+            "nextLevel": 0
+          }
+        }
+      },
+      "trainer": {
+        "background": {
+          "name": "",
+          "skills": {
+            "decreased": [],
+            "increased": []
+          }
+        },
+        "moves": {
+          "value": []
+        },
+        "edges": {
+          "value": []
+        },
+        "features": {
+          "value": []
+        },
+        "classes": {
+          "one": {
+            "name": "",
+            "level": 0,
+            "features": [],
+            "source": ""
+          },
+          "two": {
+            "name": "",
+            "level": 0,
+            "features": [],
+            "source": ""
+          },
+          "three": {
+            "name": "",
+            "level": 0,
+            "features": [],
+            "source": ""
+          },
+          "four": {
+            "name": "",
+            "level": 0,
+            "features": [],
+            "source": ""
+          }
+        },
+        "abilities": {
+          "value": []
+        },
+        "ap": {
+          "max": 1,
+          "value": 1
+        },
+        "money": {
+          "value": 0
+        }
+      },
+      "pokemon": {
+        "species": {
+          "value": ""
+        },
+        "type": {
+          "primary": "",
+          "secondary": ""
+        },
+        "item": {
+          "value": ""
+        },
+        "loyalty": {
+          "value": 0
+        },
+        "nature": {
+          "value": "",
+          "plusStat": "",
+          "minusStat": ""
+        },
+        "abilities": {
+          "value": []
+        },
+        "skills": {
+          "athl": {
+            "value": "",
+            "dice": 1,
+            "bonus": 0
+          },
+          "acro": {
+            "value": "",
+            "dice": 1,
+            "bonus": 0
+          },
+          "combat": {
+            "value": "",
+            "dice": 1,
+            "bonus": 0
+          },
+          "stealth": {
+            "value": "",
+            "dice": 1,
+            "bonus": 0
+          },
+          "percep": {
+            "value": "",
+            "dice": 1,
+            "bonus": 0
+          },
+          "focus": {
+            "value": "",
+            "dice": 1,
+            "bonus": 0
+          }
+        },
+        "tutorPoints": {
+          "max": 0,
+          "spent": 0,
+          "value": []
+        },
+        "moves": {
+          "max": 6,
+          "value": []
+        }
+      }
+    }
+  },
+  "Item": {
+    "types": [
+      "pokeball",
+      "berry",
+      "feat",
+      "edge",
+      "healing",
+      "misc",
+      "status",
+      "ability",
+      "move"
+    ]
+  }
+}

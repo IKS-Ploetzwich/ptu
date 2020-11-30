@@ -1,0 +1,21 @@
+{
+  "name": "ptu",
+  "title": "Pokémon Tabletop United",
+  "description": "Pokémon Tabletop United by https://www.pokemontabletop.com",
+  "version": "0.0.1",
+  "author": "rwbn",
+  "scripts": [],
+  "esmodules": ["ptu.js"],
+  "packs": [
+  ],
+  "socket": true,
+  "gridDistance": 2,
+  "gridUnits": "m",
+  "primaryTokenAttribute": "attributes.health",
+  "secondaryTokenAttribute": null,
+  "minimumCoreVersion": "0.7.6",
+  "compatibleCoreVersion": "0.7.6",
+  "url": "https://github.com/IKS-Ploetzwich/ptu-foundry",
+  "manifest": "https://raw.githubusercontent.com/IKS-Ploetzwich/ptu-foundry/master/system.json",
+  "download": ""
+}

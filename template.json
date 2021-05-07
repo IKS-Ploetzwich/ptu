@@ -48,7 +48,7 @@
           },
           "size": {
             "value": "",
-            "class": "1"
+            "class": 1
           },
           "health": {
             "max": 10,
@@ -56,7 +56,7 @@
             "value": 0,
             "temp": 0
           },
-          "init": {
+          "initative": {
             "value": 0,
             "mod": 0
           },
@@ -96,7 +96,7 @@
           "additional": []
         },
         "level": {
-          "value": "",
+          "value": 1,
           "exp": {
             "value": 0,
             "nextLevel": 0
@@ -107,8 +107,125 @@
         "background": {
           "name": "",
           "skills": {
-            "decreased": [],
-            "increased": []
+            "acrobatics": {
+              "name": "Acrobatics",
+              "category": "Body",
+              "value": 2,
+              "inclination": false,
+              "enhanced": false
+            }, 
+            "athletics": {
+              "name": "Athletics",
+              "category": "Body",
+              "value": 2,
+              "inclination": false,
+              "enhanced": false
+            }, 
+            "combat": {
+              "name": "Combat",
+              "category": "Body",
+              "value": 2,
+              "inclination": false,
+              "enhanced": false
+            },
+            "intimidate": {
+              "name": "Intimidate",
+              "category": "Body",
+              "value": 2,
+              "inclination": false,
+              "enhanced": false
+            },
+            "stealth": {
+              "name": "Stealth",
+              "category": "Body",
+              "value": 2,
+              "inclination": false,
+              "enhanced": false
+            },
+            "survival": {
+              "name": "Survival",
+              "category": "Body",
+              "value": 2,
+              "inclination": false,
+              "enhanced": false
+            },
+            "generalEdu": {
+              "name": "General Education",
+              "category": "Mind",
+              "value": 2,
+              "inclination": false,
+              "enhanced": false
+            },
+            "medicineEdu": {
+              "name": "Medicine Education",
+              "category": "Mind",
+              "value": 2,
+              "inclination": false,
+              "enhanced": false
+            },
+            "occultEdu": {
+              "name": "Occult education",
+              "category": "Mind",
+              "value": 2,
+              "inclination": false,
+              "enhanced": false
+            },
+            "pokeEdu": {
+              "name": "Pokémon Education",
+              "category": "Mind",
+              "value": 2,
+              "inclination": false,
+              "enhanced": false
+            },
+            "techEdu": {
+              "name": "Technology Education",
+              "category": "Mind",
+              "value": 2,
+              "inclination": false,
+              "enhanced": false
+            },
+            "guile": {
+              "name": "Guile",
+              "category": "Mind",
+              "value": 2,
+              "inclination": false,
+              "enhanced": false
+            },
+            "perception": {
+              "name": "Perception",
+              "category": "Mind",
+              "value": 2,
+              "inclination": false,
+              "enhanced": false
+            },
+            "charm": {
+              "name": "Charm",
+              "category": "Spirit",
+              "value": 2,
+              "inclination": false,
+              "enhanced": false
+            },
+            "command": {
+              "name": "Command",
+              "category": "Spirit",
+              "value": 2,
+              "inclination": false,
+              "enhanced": false
+            },
+            "focus": {
+              "name": "Focus",
+              "category": "Spirit",
+              "value": 2,
+              "inclination": false,
+              "enhanced": false
+            },
+            "intution": {
+              "name": "Intuition",
+              "category": "Spirit",
+              "value": 2,
+              "inclination": false,
+              "enhanced": false
+            }
           }
         },
         "moves": {
@@ -121,27 +238,23 @@
           "value": []
         },
         "classes": {
-          "one": {
+          "first": {
             "name": "",
-            "level": 0,
             "features": [],
             "source": ""
           },
-          "two": {
+          "second": {
             "name": "",
-            "level": 0,
             "features": [],
             "source": ""
           },
-          "three": {
+          "third": {
             "name": "",
-            "level": 0,
             "features": [],
             "source": ""
           },
-          "four": {
+          "fourth": {
             "name": "",
-            "level": 0,
             "features": [],
             "source": ""
           }
@@ -180,46 +293,49 @@
           "value": []
         },
         "skills": {
-          "athl": {
-            "value": "",
-            "dice": 1,
+          "athletics": {
+            "name": "Athletics",
+            "value": 1,
             "bonus": 0
           },
-          "acro": {
-            "value": "",
-            "dice": 1,
+          "acrobatics": {
+            "name": "Acrobatics",
+            "value": 1,
             "bonus": 0
           },
           "combat": {
-            "value": "",
-            "dice": 1,
+            "name": "Combat",
+            "value": 1,
             "bonus": 0
           },
           "stealth": {
-            "value": "",
-            "dice": 1,
+            "name": "Stealth",
+            "value": 1,
             "bonus": 0
           },
-          "percep": {
-            "value": "",
-            "dice": 1,
+          "perception": {
+            "name": "Perception",
+            "value": 1,
             "bonus": 0
           },
           "focus": {
-            "value": "",
-            "dice": 1,
+            "name": "Focus",
+            "value": 1,
             "bonus": 0
           }
         },
         "tutorPoints": {
           "max": 0,
           "spent": 0,
-          "value": []
+          "value": 0
         },
         "moves": {
           "max": 6,
           "value": []
-        }
+        },
+        "pokeEdges": [
+
+        ]
       }
     },
     "trainer": {
@@ -239,13 +355,15 @@
     "types": [
       "pokeball",
       "berry",
+      "class",
       "feat",
       "edge",
       "healing",
       "misc",
       "status",
       "ability",
-      "move"
+      "move",
+      "keyword"
     ],
     "templates": {
       "common": {
@@ -280,10 +398,18 @@
       ],
       "value": 0
     },
+    "class": {
+      "template": [
+        "common"
+      ],
+      "features": [],
+      "prerequisites": []
+    },
     "feat": {
       "template": [
         "common"
-      ]
+      ],
+      "statIncrease": ""
     },
     "edge": {
       "template": [
@@ -316,6 +442,11 @@
         "targets": ""
       },
       "keywords": []
+    },
+    "keyword": {
+      "template": [
+        "common"
+      ]
     }
   }
 }

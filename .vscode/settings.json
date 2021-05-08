@@ -1,0 +1,14 @@
+{
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "compact",
+            "extensionName": ".css",
+            "savePath": "/dist/styles/ptu"
+        }
+    ],
+    "liveSassCompile.settings.generateMap": false,
+    "liveSassCompile.settings.includeItems": [
+        "src/styles/ptu.scss"
+    ],
+    "liveSassCompile.settings.showOutputWindow": false
+} 

@@ -1,0 +1,27 @@
+{
+  "name": "ptu",
+  "title": "Pokémon Tabletop United",
+  "description": "Pokémon Tabletop United by https://www.pokemontabletop.com",
+  "version": "0.0.1",
+  "author": "rwbn",
+  "esmodules": ["ptu.js"],
+  "css": [
+    "ptu.css"
+  ],
+  "packs": [
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "gridDistance": 1,
+  "gridUnits": "m",
+  "primaryTokenAttribute": "attributes.health",
+  "secondaryTokenAttribute": null,
+  "initiative": "@attributes.initative.value + @attributes.initiative.mod",
+  "minimumCoreVersion": "0.7.9",
+  "compatibleCoreVersion": "0.7.9"
+}

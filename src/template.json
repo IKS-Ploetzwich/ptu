@@ -1,0 +1,388 @@
+{
+  "Actor": {
+    "types": [
+      "trainer",
+      "pokemon"
+    ],
+    "templates": {
+      "common": {
+        "stats": {
+          "hp": 1,
+          "atk": 1,
+          "def": 1,
+          "spAtk": 1,
+          "spDef": 1,
+          "speed": 1
+        },
+        "attributes": {
+          "name": "",
+          "age": 0,
+          "gender": "",
+          "weight": {
+            "value": 1,
+            "class": 1
+          },
+          "size": {
+            "value": 1,
+            "class": 1
+          },
+          "health": {
+            "max": 10,
+            "value": 0,
+            "temp": 0
+          },
+          "initative": {
+            "value": 0,
+            "mod": 0
+          },
+          "evasion": {
+            "phys": {
+              "value": 0,
+              "bonus": 0
+            },
+            "spec": {
+              "value": 9,
+              "bonus": 0
+            },
+            "speed": {
+              "value": 0,
+              "bonus": 0
+            }
+          },
+          "injuries": 0
+        },
+        "capabilities": {
+          "overland": 0,
+          "swim": 0,
+          "jump": {
+            "high": 0,
+            "long": 0
+          },
+          "power": 0,
+          "additional": []
+        },
+        "level": {
+          "value": 1,
+          "exp": {
+            "value": 0,
+            "nextLevel": 0
+          }
+        }
+      }
+    },
+    "trainer": {
+      "templates": [
+        "common"
+      ],
+      "background": {
+        "name": "",
+        "skills": {
+          "acrobatics": {
+            "name": "Acrobatics",
+            "category": "Body",
+            "value": 2,
+            "inclination": false,
+            "enhanced": false
+          }, 
+          "athletics": {
+            "name": "Athletics",
+            "category": "Body",
+            "value": 2,
+            "inclination": false,
+            "enhanced": false
+          }, 
+          "combat": {
+            "name": "Combat",
+            "category": "Body",
+            "value": 2,
+            "inclination": false,
+            "enhanced": false
+          },
+          "intimidate": {
+            "name": "Intimidate",
+            "category": "Body",
+            "value": 2,
+            "inclination": false,
+            "enhanced": false
+          },
+          "stealth": {
+            "name": "Stealth",
+            "category": "Body",
+            "value": 2,
+            "inclination": false,
+            "enhanced": false
+          },
+          "survival": {
+            "name": "Survival",
+            "category": "Body",
+            "value": 2,
+            "inclination": false,
+            "enhanced": false
+          },
+          "generalEdu": {
+            "name": "General Education",
+            "category": "Mind",
+            "value": 2,
+            "inclination": false,
+            "enhanced": false
+          },
+          "medicineEdu": {
+            "name": "Medicine Education",
+            "category": "Mind",
+            "value": 2,
+            "inclination": false,
+            "enhanced": false
+          },
+          "occultEdu": {
+            "name": "Occult education",
+            "category": "Mind",
+            "value": 2,
+            "inclination": false,
+            "enhanced": false
+          },
+          "pokeEdu": {
+            "name": "Pokémon Education",
+            "category": "Mind",
+            "value": 2,
+            "inclination": false,
+            "enhanced": false
+          },
+          "techEdu": {
+            "name": "Technology Education",
+            "category": "Mind",
+            "value": 2,
+            "inclination": false,
+            "enhanced": false
+          },
+          "guile": {
+            "name": "Guile",
+            "category": "Mind",
+            "value": 2,
+            "inclination": false,
+            "enhanced": false
+          },
+          "perception": {
+            "name": "Perception",
+            "category": "Mind",
+            "value": 2,
+            "inclination": false,
+            "enhanced": false
+          },
+          "charm": {
+            "name": "Charm",
+            "category": "Spirit",
+            "value": 2,
+            "inclination": false,
+            "enhanced": false
+          },
+          "command": {
+            "name": "Command",
+            "category": "Spirit",
+            "value": 2,
+            "inclination": false,
+            "enhanced": false
+          },
+          "focus": {
+            "name": "Focus",
+            "category": "Spirit",
+            "value": 2,
+            "inclination": false,
+            "enhanced": false
+          },
+          "intution": {
+            "name": "Intuition",
+            "category": "Spirit",
+            "value": 2,
+            "inclination": false,
+            "enhanced": false
+          }
+        }
+      },
+      "moves": [],
+      "edges": [],
+      "features": [],
+      "classes": [],
+      "abilities": [],
+      "ap": {
+        "max": 1,
+        "value": 1
+      },
+      "money": 0
+    },
+    "pokemon": {
+      "templates": [
+        "common"
+      ],
+      "species": {},
+      "item": {},
+      "loyalty": 0,
+      "nature": {},
+      "abilities": [],
+      "skills": {
+        "athletics": {
+          "name": "Athletics",
+          "value": 1,
+          "bonus": 0
+        },
+        "acrobatics": {
+          "name": "Acrobatics",
+          "value": 1,
+          "bonus": 0
+        },
+        "combat": {
+          "name": "Combat",
+          "value": 1,
+          "bonus": 0
+        },
+        "stealth": {
+          "name": "Stealth",
+          "value": 1,
+          "bonus": 0
+        },
+        "perception": {
+          "name": "Perception",
+          "value": 1,
+          "bonus": 0
+        },
+        "focus": {
+          "name": "Focus",
+          "value": 1,
+          "bonus": 0
+        }
+      },
+      "tutorPoints": {
+        "max": 0,
+        "spent": 0
+      },
+      "moves": [],
+      "pokeEdges": []
+    }
+  },
+  "Item": {
+    "types": [
+      "pokeball",
+      "berry",
+      "class",
+      "feat",
+      "edge",
+      "healing",
+      "held",
+      "status",
+      "ability",
+      "move",
+      "keyword",
+      "type",
+      "species",
+      "pokeEdge"
+    ],
+    "templates": {
+      "common": {
+        "name": "",
+        "description": "",
+        "source": ""
+      },
+      "physicalItem": {
+        "quantity": 0,
+        "price": 0,
+        "weight": 0
+      }
+    },
+    "type": {
+      "name": "",
+      "weaknesses": [],
+      "immunities": []
+    },
+    "species": {
+      "template": ["common"],
+      "types": [],
+      "pokedexNo": 0,
+      "abilities": {
+        "basic": [],
+        "advanced": [],
+        "high": []
+      },
+      "moves": [],
+      "tutorMoves": [],
+      "eggMoves": [],
+      "category": "",
+      "catchRate": 0
+    },
+    "pokeball": {
+      "template": [
+        "common",
+        "physicalItem"
+      ],
+      "bonus": 0
+    },
+    "berry": {
+      "template": [
+        "common",
+        "physicalItem"
+      ],
+      "tier": 0
+    },
+    "healing": {
+      "template": [
+        "common",
+        "physicalItem"
+      ],
+      "value": 0
+    },
+    "class": {
+      "template": [
+        "common"
+      ],
+      "features": [],
+      "prerequisites": []
+    },
+    "feat": {
+      "template": [
+        "common"
+      ],
+      "statIncrease": ""
+    },
+    "edge": {
+      "template": [
+        "common"
+      ]
+    },
+    "status": {
+      "template": [
+        "common"
+      ]
+    },
+    "ability": {
+      "template": [
+        "common"
+      ]
+    },
+    "move": {
+      "template": [
+        "common"
+      ],
+      "freq": "",
+      "ac": 2,
+      "type": {
+        "att": "",
+        "dmg": ""
+      },
+      "damage": "",
+      "range": {
+        "range": 0,
+        "targets": ""
+      },
+      "keywords": []
+    },
+    "keyword": {
+      "template": [
+        "common"
+      ]
+    },
+    "held": {
+      "template": ["common", "physicalItem"]
+    },
+    "pokeEdge": {
+      "template": ["common"]
+    }
+  }
+}

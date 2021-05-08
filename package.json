@@ -1,0 +1,32 @@
+{
+  "name": "ptu",
+  "version": "0.0.1",
+  "description": "Pokémon Tabletop United by https://www.pokemontabletop.com",
+  "main": "ptu.js",
+  "dependencies": {
+    "@types/node": "^14.10.1",
+    "typescript": "^4.2.4"
+  },
+  "devDependencies": {
+    "@league-of-foundry-developers/foundry-vtt-types": "^0.7.9-6",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "ts-node": "^9.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build",
+    "update-foundry": "gulp update"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IKS-Ploetzwich/ptu.git"
+  },
+  "author": "rwbn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IKS-Ploetzwich/ptu/issues"
+  },
+  "homepage": "https://github.com/IKS-Ploetzwich/ptu#readme"
+}

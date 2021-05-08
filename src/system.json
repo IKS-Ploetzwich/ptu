@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "author": "rwbn",
   "esmodules": ["ptu.js"],
-  "css": [
+  "styles": [
     "ptu.css"
   ],
   "packs": [

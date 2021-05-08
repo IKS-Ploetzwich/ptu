@@ -3,7 +3,7 @@
         {
             "format": "compact",
             "extensionName": ".css",
-            "savePath": "/dist/styles/ptu"
+            "savePath": "/dist/styles"
         }
     ],
     "liveSassCompile.settings.generateMap": false,

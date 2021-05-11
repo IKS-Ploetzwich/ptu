@@ -1,0 +1,29 @@
+.ptu-item__header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 3fr 1fr;
+    grid-template-areas: "img   .       source"
+                         "title title   title";
+    width: 100%;
+}
+
+.ptu-header__image {
+    display: flex !important;
+    grid-area: img;
+    width: 100%;
+    height: auto;
+}
+
+.ptu-header__source {
+    grid-area: source;
+    margin-left: auto;
+}
+
+.ptu-header__source > label {
+    font-weight: bold;
+    display: block;
+}
+
+.ptu-header__title {
+    grid-area: title;
+}

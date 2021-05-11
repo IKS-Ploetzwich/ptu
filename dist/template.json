@@ -277,7 +277,6 @@
     ],
     "templates": {
       "common": {
-        "name": "",
         "description": "",
         "source": ""
       },
@@ -293,7 +292,7 @@
       "immunities": []
     },
     "species": {
-      "template": ["common"],
+      "templates": ["common"],
       "types": [],
       "pokedexNo": 0,
       "abilities": {
@@ -308,81 +307,86 @@
       "catchRate": 0
     },
     "pokeball": {
-      "template": [
+      "templates": [
         "common",
         "physicalItem"
       ],
       "bonus": 0
     },
     "berry": {
-      "template": [
+      "templates": [
         "common",
         "physicalItem"
       ],
       "tier": 0
     },
     "healing": {
-      "template": [
+      "templates": [
         "common",
         "physicalItem"
       ],
       "value": 0
     },
     "class": {
-      "template": [
+      "templates": [
         "common"
       ],
       "features": [],
       "prerequisites": []
     },
     "feat": {
-      "template": [
+      "templates": [
         "common"
       ],
       "statIncrease": ""
     },
     "edge": {
-      "template": [
+      "templates": [
         "common"
       ]
     },
     "status": {
-      "template": [
+      "templates": [
         "common"
       ]
     },
     "ability": {
-      "template": [
+      "templates": [
         "common"
-      ]
+      ],
+      "freq": "static"
     },
     "move": {
-      "template": [
+      "templates": [
         "common"
       ],
       "freq": "",
       "ac": 2,
-      "type": {
-        "att": "",
-        "dmg": ""
-      },
+      "type": {},
       "damage": "",
       "range": {
         "range": 0,
         "targets": ""
       },
-      "keywords": []
+      "keywords": [],
+      "attackStat": "",
+      "defenseStat": "",
+      "alwaysHits": false,
+      "userStatIncrease": [],
+      "userStatDecrease": [],
+      "targetStatIncrease": [],
+      "targetStatDecrease": []
     },
     "keyword": {
-      "template": [
+      "templates": [
         "common"
       ]
     },
     "held": {
-      "template": ["common", "physicalItem"]
+      "templates": ["common", "physicalItem"]
     },
     "pokeEdge": {
-      "template": ["common"]
+      "templates": ["common"]
     }
   }
 }

@@ -1,0 +1,6 @@
+{
+    "PTU.header.source": "Source",
+    "PTU.damageType.physical": "Physical",
+    "PTU.damageType.special": "Special",
+    "PTU.damageType.status": "Status"
+}

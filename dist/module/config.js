@@ -1,7 +1,20 @@
 export const ptu = {
     damageType: {
-        physical: "ptu.damageType.physical",
-        special: "ptu.damageType.special",
-        status: "ptu.damageType.status"
-    }
+        physical: 'PTU.damageType.physical',
+        special: 'PTU.damageType.special',
+        status: 'PTU.damageType.status'
+    },
+    header: {
+        source: 'PTU.header.source'
+    },
+    frequencies: [
+        'Static',
+        'At Will',
+        'EoT',
+        'Scene',
+        'Scene x 2',
+        'Daily',
+        'Daily x 2',
+        'Daily x 3'
+    ]
 };

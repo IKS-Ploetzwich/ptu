@@ -11,6 +11,7 @@
     "@league-of-foundry-developers/foundry-vtt-types": "^0.7.9-6",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.1.0",
+    "del": "^6.0.0",
     "gulp-typescript": "^6.0.0-alpha.1",
     "ts-node": "^9.1.1"
   },

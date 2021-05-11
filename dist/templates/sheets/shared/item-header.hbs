@@ -1,0 +1,18 @@
+<header class="sheet-header ptu-item__header">
+    <img class="ptu-header__image" src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64" />
+    <div class="ptu-header__source">
+        <label>Source</label>
+        <input name="source" type="text" value="{{source}}" placeholder="Source" />
+        {{#if (eq item.type "ability")}}
+            <label>Frequency</label>
+            <select name="data.freq">
+                {{#select data.freq}}
+                {{#each config.frequencies as |freq id|}}
+                    <option value="{{freq}}">{{freq}}</option>
+                {{/each}}
+                {{/select}}
+            </select>
+        {{/if}}
+    </div>
+    <h1 class="ptu-header__title"><input name="name" type="text" value="{{item.name}}" placeholder="Name" /></h1>
+</header>

@@ -1,6 +1,4 @@
-
 interface CommonData {
-    name: string;
     description: string;
     source: string;
 }
@@ -34,22 +32,27 @@ interface PokeEdgeData extends CommonData {
 interface StatusData extends CommonData {
 }
 interface AbilityData extends CommonData {
+    freq: string;
 }
 interface KeywordData extends CommonData {
 }
 interface MoveData extends CommonData {
     freq: string;
     ac: number;
-    type: {
-        att: string;
-        dmg: string;
-    };
+    type: TypeItemData;
     damage:string;
     range: {
         range: number;
         targets: ""
     };
-    keywords: Array<KeywordData>;
+    keywords: Array<KeywordItemData>;
+    attackStat: string;
+    defenseStat: string;
+    alwaysHits: false;
+    userStatIncrease: Array<string>;
+    userStatDecrease: Array<string>;
+    targetStatIncrease: Array<string>;
+    targetStatDecrease: Array<string>;
 }
 interface TypeData {
     name: string;
@@ -127,6 +130,6 @@ export interface NatureItemData extends Item.Data<NatureData> {
 export type SystemItemData = PokeballItemData | BerryItemData | HealingItemData | FeatItemData | 
                                 ClassItemData | EdgeItemData | StatusItemData | AbilityItemData |
                                 KeywordItemData | MoveItemData | TypeItemData | SpeciesItemData |
-                                PokeEdgeItemData | NatureItemData;
+                                PokeEdgeItemData | NatureItemData | HeldItemData;
 
 export type HoldableItemData = HealingItemData | BerryItemData | HeldItemData;

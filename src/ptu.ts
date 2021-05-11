@@ -3,6 +3,7 @@ import { ptu } from "./module/config.js";
 import { SystemItem } from "./module/items/item.js";
 import PTUItemSheet from "./module/sheets/PTUItemSheet.js";
 
+
 Hooks.once("init", () => {
     console.log("ptu | Initialising Pokemon Tabletop United System");
 
@@ -13,4 +14,14 @@ Hooks.once("init", () => {
     Items.unregisterSheet("core", ItemSheet);
     Items.registerSheet("ptu", PTUItemSheet);
 
+    preloadHandlebarsTemplates();
+
 });
+
+const preloadHandlebarsTemplates = async () => {
+    const templatePaths = [
+        'systems/ptu/templates/sheets/shared/item-header.hbs'
+    ];
+    return loadTemplates (templatePaths);
+}
+

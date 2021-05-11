@@ -3,10 +3,12 @@ export default class PTUItemSheet extends ItemSheet {
         return `systems/ptu/templates/sheets/items/${this.item.data.type}-sheet.hbs`;
     }
     getData() {
-        return {
+        const newData = {
             ...super.getData(),
             config: CONFIG.ptu
         };
+        console.log(super.getData())
+        return newData;
     }
 
     static get defaultOptions() {
@@ -14,7 +16,7 @@ export default class PTUItemSheet extends ItemSheet {
             ...super.defaultOptions,
             width: 660,
             height: 500,
-            classes: ["ptu", "feat"]
+            classes: ["ptu", "ptu-item"]
         })
     }
 }

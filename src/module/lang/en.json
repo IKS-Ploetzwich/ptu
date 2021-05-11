@@ -1,9 +1,0 @@
-{
-    "ptu": {
-        "damageType": {
-            "physical": "Physical",
-            "special": "Special",
-            "status": "Status"
-        }
-    }
-}
